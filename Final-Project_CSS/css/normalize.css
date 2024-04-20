@@ -1,0 +1,257 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
+
+/* Body Styles */
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+}
+
+.app-logo img {
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align vertically for smaller screens */
+}
+
+.nav-links li {
+    margin: 0 18px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ham-burger {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Top Row Styles */
+.top-row {
+    width: 92%;
+    max-width: 1325px;
+    border-radius: 36px;
+    overflow: hidden;
+    margin: 45px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding */
+}
+
+.top-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.top-right img {
+    width: 100%; /* Adjust image width */
+    max-width: 100%;
+    height: auto;
+}
+
+.top-left {
+    flex: 1;
+    padding: 20px; /* Adjust padding */
+    text-align: center; /* Center align text */
+}
+
+.top-left h1 {
+    font-size: 1.8em; /* Adjust font size */
+    color: #333;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.top-left p {
+    font-size: 1em; /* Adjust font size */
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 30px;
+    margin: 20px auto; /* Adjust margin */
+}
+
+.wrapper {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.main-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.main-content p {
+    font-size: 1em; /* Adjust font size */
+    font-family: "Nunito", sans-serif;
+    line-height: 1.4;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+form .check-box {
+    display: flex;
+    align-items: center;
+}
+
+form label.check-box {
+    text-align: left;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 13px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+form input[type="checkbox"] {
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+form button {
+    background-color: #36A9AE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+form button:hover {
+    background-color: #2C7A7E;
+}
+
+/* Small Screen Layout (Smartphones) */
+@media screen and (max-width: 778px) {
+    .ham-burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column; /* Change to column layout */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #007bff;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 6px 0; /* Adjust margin */
+    }
+
+    .top-row {
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Footer Styles */
+footer{
+  background-color: #333;
+}
+.footer-content{
+  width: 100%;
+  padding: 18px 18px 22px ;
+  height: 84px;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.social-icons a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 9px;
+  border-radius: 50%;
+  width: 50px;
+  height: 49px;
+}
+
+.social-icons a i{
+  font-size: 1.8em;
+  color: black;
+  opacity: 0.9;
+}
+
+.footer-bottom{
+  padding: 15px;
+  text-align: center;
+}
+.footer-bottom p{
+  color: #fff;
+  line-height: 1.2em;
+}
